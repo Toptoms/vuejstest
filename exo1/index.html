@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <label for="name">Rentre ton texte:</label>
+        <input type="text" v-model="value_test" />
+        <h1>Result:{{ value_test }}</h1>
+
+
+        <label for="name">Rentre ton texte:</label>
+        <input type="text" v-model="value_test1" />
+        <button v-on:click="show = !show">
+            affiche
+        </button>
+
+        <h2 :class="{ red: active }" v-if="show">{{ value_test1 }}</h2>
+        <input type="checkbox" id="checkbox" v-model=" active">
+
+        <input type="checkbox" id="checkbox" v-model=" showpic">
+        <p v-if="showpic"><img src="pic.jpg" ></p>
+       
+
+
+
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+html, body {
+    margin: 5px;
+    padding: 0;
+}
+
+#app1 {
+    margin: 50px;
+  }
+
+  .red { 
+    color: red; 
+  }
