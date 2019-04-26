@@ -12,23 +12,18 @@
         <input type="text" v-model="value_test" />
         <h1>Result:{{ value_test }}</h1>
 
-
         <label for="name">Rentre ton texte:</label>
         <input type="text" v-model="value_test1" />
-        <button v-on:click="show = !show">
+        <button v-on:click="value_test2 = value_test1">
             affiche
         </button>
 
-        <h2 :class="{ red: active }" v-if="show">{{ value_test1 }}</h2>
+        <h2 :class="{ red: active }" v-if="value_test2">{{ value_test2 }}</h2>
         <input type="checkbox" id="checkbox" v-model=" active">
 
         <input type="checkbox" id="checkbox" v-model=" showpic">
         <p v-if="showpic"><img src="pic.jpg" ></p>
        
-
-
-
-
     </div>
 
 
